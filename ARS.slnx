@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ARS.API/ARS.API.csproj" />
+    <Project Path="src/ARS.Application/ARS.Application.csproj" />
+    <Project Path="src/ARS.Domain/ARS.Domain.csproj" />
+    <Project Path="src/ARS.Infrastructure/ARS.Infrastructure.csproj" />
+    <Project Path="src/ARS.Web/ARS.Web.csproj" />
+  </Folder>
+</Solution>
