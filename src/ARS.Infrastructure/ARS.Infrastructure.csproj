@@ -1,10 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.SqlServer" />
     <ProjectReference Include="..\ARS.Domain\ARS.Domain.csproj" />
     <ProjectReference Include="..\ARS.Application\ARS.Application.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" />
   </ItemGroup>
-
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
