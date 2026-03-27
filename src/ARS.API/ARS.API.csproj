@@ -7,11 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CorrelationId" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
     <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Common" />
+    <PackageReference Include="Serilog.AspNetCore" />
+    <PackageReference Include="Serilog.Enrichers.CorrelationId" />
+    <PackageReference Include="Serilog.Sinks.Console" />
+    <PackageReference Include="Serilog.Sinks.File" />
+    <PackageReference Include="Serilog.Sinks.Seq" />
     <ProjectReference Include="..\ARS.Application\ARS.Application.csproj" />
     <ProjectReference Include="..\ARS.Infrastructure\ARS.Infrastructure.csproj" />
     <ProjectReference Include="..\ARS.Domain\ARS.Domain.csproj" />
+
   </ItemGroup>
 
 </Project>

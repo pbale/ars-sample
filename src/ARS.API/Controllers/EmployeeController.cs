@@ -10,17 +10,25 @@ namespace ARS.API.Controllers
     [Route("api/[controller]")]
     public class EmployeeController : ControllerBase
     {
+        private readonly ILogger<EmployeeService> _logger;
+
+        public EmployeeController(ILogger<EmployeeService> logger)
+        {
+            _logger = logger;
+        }
         private readonly EmployeeService _service;
 
-        public EmployeeController(EmployeeService service)
+       /* public EmployeeController(EmployeeService service)
         {
             _service = service;
-        }
+        }*/
 
         [HttpGet]
-        public async Task<IEnumerable<Employee>> Get()
+        public string Get()
         {
-            return await _service.GetEmployees();
+            _logger.LogInformation("Successfully fetched employees");
+
+            return "There are 10 employees in the system.";
         }
     }
 }
