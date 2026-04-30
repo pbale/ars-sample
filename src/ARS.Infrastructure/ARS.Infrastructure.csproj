@@ -5,6 +5,8 @@
     <ProjectReference Include="..\ARS.Domain\ARS.Domain.csproj" />
     <ProjectReference Include="..\ARS.Application\ARS.Application.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" />
+    <PackageReference Include="Dapper" />
+    <PackageReference Include="Microsoft.Data.SqlClient" />
   </ItemGroup>
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>

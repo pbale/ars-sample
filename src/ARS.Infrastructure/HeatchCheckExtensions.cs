@@ -29,7 +29,8 @@ public static class HealthCheckExtensions
         //Open a db cnnection to check if the database is reachable. 
         // return healthy if it is, unhealthy if it isn't.
         services.AddHealthChecks()
-            .AddSqlServer(connectionString, name: "database");
+            .AddSqlServer(connectionString, name: "database",
+            timeout: TimeSpan.FromSeconds(5));
 
         return services;
     }

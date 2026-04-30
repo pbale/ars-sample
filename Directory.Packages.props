@@ -5,8 +5,10 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="AspNetCore.HealthChecks.SqlServer" Version="9.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.5" />
     <PackageVersion Include="CorrelationId" Version="3.0.1" />
     <PackageVersion Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" Version="2.2.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.Http"  Version="2.2.0"/>
     <PackageVersion Include="Serilog" Version="4.3.1" />
     <PackageVersion Include="Microsoft.Extensions.Diagnostics.HealthChecks.Common" Version="10.0.0" />
     <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
